@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+footer {
+  text-align: center;
+}
+
+header {
+  margin: top;
+  padding: 1rem;
+}
+
+a{
+  cursor: pointer;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dagens-lunch-content h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dagens-lunch-content p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.banner {
+  width: 100%;
+  height: 3rem;
+  overflow: hidden; /* already good */
+  position: relative;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.slides {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  padding: 0 2rem;
+  white-space: nowrap;
+  line-height: 3rem; /* vertically center text */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.dagens-lunch-wrapper img {
+  display: none;
+}
+
+.logotype {
+  width: 220px;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.dagens-lunch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  background: rgba(255, 255, 255, 0.8);
+  border: 10px solid maroon;
+}
+
+
+.menu-image button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfect centering */
+  width: 50%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: maroon;
+  
+}
+
+.hero-overlay {
+  
+  background: rgba(0, 0, 0, 0.4);
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: flex-start; /* 👈 THIS is the key */
+  
+  padding-top: 3rem; /* 👈 same as banner height */
+  gap: 1.5rem;
+}
+
+.hero-items,
+.menu-items {
+  width: 100%;
+}
+
+.menu-items img {
+  width: 100%;
+  display: block;
+}
+
+.uteservering-bild,
+.rattigheter{
+  width: 100%;
+  height: auto;
+}
+
+.menu-image{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.menu-image img{
+  height: 10%;
+}
+
+
+
+.divider {
+  border: 5px solid maroon;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  margin-top: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: maroon;
+}
+
+.nav-links a:hover {
+  color: burlywood;
+}
+
+/* HERO CONTENT */
+.dagens-lunch-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dagens-lunch-header {
+  text-align: center;
+  color: maroon;
+}
+
+.dagens-lunch-content h2 {
+  font-size: 3rem;
+}
+
+.dagens-lunch-content p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff3b3b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff1f1f;
+}
+
+/* RESPONSIVE */
+@media (min-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .dagens-lunch-content h2 {
+    font-size: 2rem;
+  }
+  
+
+}
+
+@media (min-width: 640px) {
+ 
+  .hero{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .main{
+    border: 2px solid green;
+  }
+
+  .menu-image {
+  position: relative;
+  width: 100%;
+}
+
+.menu-image button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 2rem;
+  background: rgba(255,255,255,0.7);
+  color: maroon;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-image img {
+  width: 100%;
+  display: block;
+}
+
+
+  
+}
+
+@media (min-width: 1024px) {
+  
+  .hero-overlay{
+    
+    flex-direction: row;
+    
+  }
+  
+ 
+
+
+}

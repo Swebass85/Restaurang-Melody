@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add title here</title>
+  <link rel="stylesheet" href="\stylesheets\style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-items">
+      <img src="\images\DSC09202.png" alt="Melody Logotyp" class="logotype">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">Meny</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Sociala medier</a></li>
+          <li><a href="#">Förslagslåda</a></li>
+        </ul>
+      </nav>
+    </div> <!-- /nav-items -->
+  </header>
+  <div class="divider"></div>
+
+ 
+  <div class="banner">
+    <div class="slides">
+      <div class="slide">Välkommen till vår nyrenoverade restaurang i Vinslöv</div>
+      <div class="slide">Fullständiga rättigheter – öl, vin & drycker</div>
+      <div class="slide">Pizza, à la carte, pasta, sallader, gyros</div>
+      
+      <!-- duplicate for seamless loop -->
+      <div class="slide">Välkommen till vår nyrenoverade restaurang i Vinslöv</div>
+      <div class="slide">Fullständiga rättigheter – öl, vin & drycker</div>
+            <div class="slide">Pizza, à la carte, pasta, sallader, gyros</div>
+          </div><!-- /slides -->
+          
+        </div><!-- /banner -->
+        
+      <div class="main">
+        <div class="dagens-lunch-wrapper">
+          <div class="dagens-lunch-content">
+            <div class="dagens-lunch-header">
+              <h1>DAGENS LUNCH 119:-</h1>
+              <h1>Mån-fre 11-13.30</h1>
+            </div>
+              <p>Inkl. dryck, sallad, bröd och nybryggt kaffe</p>
+              <p>Valfri pizza, Bakad potatis, Sallad, Gyros...</p>
+            </div> <!-- dagens-lunch-content -->
+            <img
+              class=""
+              src="/images/menu.png/"
+              alt=""
+              id=""
+            />
+          </div> <!-- dagens-lunch-items -->
+        <div class="hero">
+        
+          
+          <div class="menu-items">
+            <div class="menu-image">
+              <img src="images/menu.png" alt="" />
+              <a>
+                <button>
+                  <h1>TILL VÅR MENY</h1>
+                </button>
+              </a>
+            </div> <!-- /menu-image -->
+          </div><!-- menu-items -->  
+          <div class="uteservering">
+            <img
+              class="uteservering-bild"
+              src="\images\uteservering.png"
+              alt=""
+              id=""
+            />
+          </div>
+          <div class="rattigheter">
+            <img
+              class="rattigheter"
+              src="\images\DSC09206.png"
+              alt=""
+              id=""
+            />
+          </div>
+        </div><!-- /hero -->
+      </div> <!-- /main -->
+
+  </div><!-- /main -->
+  <div class="divider"></div>
+  <footer>
+    <p>© <%= year %> Restaurang Melody i Vinslöv</p>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+});
+</script>
+</html>
